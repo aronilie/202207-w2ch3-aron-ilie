@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 /* eslint-disable no-alert */
-/* eslint-disable prefer-template */
 function calculatorPro() {
   let newNumber;
   const numberList = [];
@@ -31,18 +30,18 @@ function calculatorPro() {
     result[3] /= numberList[i];
   }
 
-  console.log("The result of the sum is: " + result[0]);
-  console.log("The result of the rest is: " + result[1]);
-  console.log("The result of the multiplication is: " + result[2]);
-  console.log("The result of the division is: " + result[3]);
+  console.log(`"The result of the sum is: " + ${result[0]}`);
+  console.log(`"The result of the rest is: " + ${result[1]}`);
+  console.log(`"The result of the multiplication is: " + ${result[2]}`);
+  console.log(`"The result of the division is: " + ${result[3]}`);
 
-  newNumber = prompt("New numbers? y/n");
+  newNumber = prompt("New numbers? (y)");
 
   switch (newNumber) {
     case "y":
       calculatorPro();
       break;
-    case "n":
+    default:
       console.log("Bye!");
   }
 }
