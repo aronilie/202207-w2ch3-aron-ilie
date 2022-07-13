@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const display = document.getElementById("display");
 
 const buttons = Array.from(document.getElementsByClassName("button"));

@@ -1,4 +1,8 @@
+/* eslint-disable no-console */
+/* eslint-disable no-alert */
 function calculator() {
+  let j;
+
   let result = [];
   let canOperate;
 
@@ -6,14 +10,14 @@ function calculator() {
   let number2;
 
   while (!canOperate) {
-    if (number1 === "" || isNaN(number1) === true) {
+    if (number1 === "" || Number.isNaN(number1) === true) {
       number1 = prompt("The number you entered is incorrect, please try again");
     } else {
       number1 = Number(number1);
       number2 = prompt("Enter the second number (optional)");
 
       while (!canOperate) {
-        if (isNaN(number2) === true) {
+        if (Number.isNaN(number2) === true) {
           number2 = prompt(
             "The number you entered is incorrect, please try again"
           );

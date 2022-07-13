@@ -1,6 +1,11 @@
+/* eslint-disable no-restricted-globals */
+/* eslint-disable no-console */
+/* eslint-disable no-alert */
 let userChoice;
 
 let turnNumber;
+
+let i;
 
 const attemptsIdx = 500;
 
@@ -55,7 +60,7 @@ let bingoCard = [
 function bingo() {
   newPlayer.name = prompt(
     "Welcome to bingo game! Please enter your name to continue."
-  ):"";
+  );
 
   alert(
     "Your punctuation will depend on the number of attempts you make LINE. The more attempts you make, the less points you get."
