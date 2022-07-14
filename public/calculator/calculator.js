@@ -1,13 +1,10 @@
 /* eslint-disable no-console */
 /* eslint-disable no-alert */
-function calculator() {
+function calculator(number1, number2) {
   let j;
 
   let result = [];
   let canOperate;
-
-  let number1 = prompt("Enter the first number");
-  let number2;
 
   while (!canOperate) {
     if (number1 === "" || Number.isNaN(number1) === true) {
@@ -59,3 +56,5 @@ function calculator() {
 }
 
 calculator();
+
+export default calculator;
